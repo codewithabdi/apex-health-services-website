@@ -4,38 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apex Health Services - About</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Apex Health Services</h1>
-    <p>Professional and caring health support services</p>
-  </header>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold brand-text" href="index.html">Apex Health</a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <main>
-    <h2>About Us</h2>
-    <p>
-      Apex Health Services is focused on providing quality care and support
-      to individuals and families.
-    </p>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
 
-    <p>
-      This website was created to help people easily understand the services
-      we offer and how to reach us.
-    </p>
-  </main>
+      <a href="contact.html" class="btn blue-btn">Get Started</a>
+    </div>
+  </div>
+</nav>
 
-  <footer>
-    <p>&copy; 2026 Apex Health Services</p>
-  </footer>
+<header class="container page-hero text-center">
+  <span class="section-pill">ABOUT APEX</span>
+  <h1>Care built around respect and support</h1>
+  <p>
+    Apex Health Services is focused on helping individuals and families receive
+    reliable support in a caring and professional way.
+  </p>
+</header>
 
+<main class="container section-space">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <div class="info-card">
+        <h2>Who We Are</h2>
+        <p>
+          Apex Health Services provides support services for individuals and
+          families in Ohio. Our goal is to create a safe, respectful, and
+          helpful experience for every person we serve.
+        </p>
+        <p>
+          This website was created to make it easy for visitors to learn about
+          our services, understand our mission, and contact us.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="info-card blue-soft">
+        <h2>Our Values</h2>
+        <ul>
+          <li>Respectful care</li>
+          <li>Clear communication</li>
+          <li>Professional support</li>
+          <li>Community connection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Apex Health Services. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
