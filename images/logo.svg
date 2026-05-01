@@ -1,0 +1,20 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="apexGradient" x1="20" y1="15" x2="95" y2="105">
+      <stop offset="0%" stop-color="#17B8C7"></stop>
+      <stop offset="55%" stop-color="#155DFC"></stop>
+      <stop offset="100%" stop-color="#061B49"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- A shape -->
+  <path d="M18 96L50 24H75L43 96H18Z" fill="url(#apexGradient)"></path>
+
+  <!-- X shape -->
+  <path d="M46 70L59 50L82 96H58L46 70Z" fill="#061B49"></path>
+
+  <!-- E bars -->
+  <rect x="69" y="25" width="34" height="12" fill="#17B8C7"></rect>
+  <rect x="69" y="52" width="29" height="12" fill="#0F7DD9"></rect>
+  <rect x="69" y="80" width="37" height="12" fill="#061B49"></rect>
+</svg>
