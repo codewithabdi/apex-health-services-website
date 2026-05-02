@@ -1,153 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- title on browser tab -->
   <title>Apex Health Services - Home</title>
 
+  <!-- bootstrap for layout and navbar -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- my custom css -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top custom-navbar">
   <div class="container">
+
+    <!-- logo and name -->
     <a class="navbar-brand d-flex align-items-center gap-2 fw-bold brand-text" href="index.html">
       <img src="images/logo.svg" alt="Apex Health Services Logo" class="nav-logo">
       <span class="d-none d-md-inline">Apex Health Services</span>
       <span class="d-inline d-md-none">Apex Health</span>
     </a>
 
+    <!-- button for phone menu -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- navbar links -->
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
       </ul>
 
-      <a href="contact.html" class="btn blue-btn">Get Started</a>
+      <!-- phone number and button -->
+      <div class="nav-right d-flex align-items-center gap-3">
+        <a href="tel:4808429492" class="nav-phone d-none d-lg-inline">(480) 842-9492</a>
+        <a href="contact.html" class="btn blue-btn">Get Started</a>
+      </div>
     </div>
   </div>
 </nav>
 
-<header class="container hero-box my-3">
-  <div class="row align-items-center">
-    <div class="col-lg-6 hero-text">
-      <span class="review-badge">★ Trusted DODD Provider Support</span>
-      <h1>Your Care, Our Priority</h1>
-      <p>
-        Apex Health Services supports individuals and families with caring,
-        professional, and community-based health services.
-      </p>
 
-      <div class="d-flex gap-3 flex-wrap">
-        <a href="contact.html" class="btn blue-btn">Contact Us</a>
-        <a href="services.html" class="btn white-btn">Learn More</a>
+<!-- hero section -->
+<header class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- hero text -->
+      <div class="col-lg-6 reveal">
+        <h1>Care That Feels Personal.</h1>
+
+        <p>
+          Apex Health Services provides compassionate, community-based support
+          that helps individuals and families feel confident, respected, and cared for.
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap hero-buttons">
+          <a href="contact.html" class="btn blue-btn">Contact Us <span>→</span></a>
+          <a href="services.html" class="btn outline-btn">View Services <span>→</span></a>
+        </div>
       </div>
-    </div>
 
-    <div class="col-lg-6">
-      <div class="hero-image"></div>
+      <!-- hero picture -->
+      <div class="col-lg-6 reveal delay-1">
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80';"
+            alt="Caregiver holding someone's hand"
+            class="hero-img"
+          >
+        </div>
+      </div>
+
     </div>
   </div>
 </header>
 
+
+<!-- feature strip -->
+<section class="container feature-strip reveal">
+  <div class="row g-0">
+
+    <!-- feature one -->
+    <div class="col-md-3">
+      <div class="feature-item">
+        <div class="feature-line"></div>
+        <h4>Person-Centered Support</h4>
+        <p>Care built around each person’s comfort, goals, and independence.</p>
+      </div>
+    </div>
+
+    <!-- feature two -->
+    <div class="col-md-3">
+      <div class="feature-item">
+        <div class="feature-line"></div>
+        <h4>Community-Based Care</h4>
+        <p>Support that helps individuals stay connected at home and in the community.</p>
+      </div>
+    </div>
+
+    <!-- feature three -->
+    <div class="col-md-3">
+      <div class="feature-item">
+        <div class="feature-line"></div>
+        <h4>Reliable Care Team</h4>
+        <p>Dependable support focused on respect, safety, and communication.</p>
+      </div>
+    </div>
+
+    <!-- feature four -->
+    <div class="col-md-3">
+      <div class="feature-item last">
+        <div class="feature-line"></div>
+        <h4>Support That Lasts</h4>
+        <p>Consistent care that can grow with each individual and family over time.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- services section -->
 <main class="container section-space">
-  <div class="text-center mb-5">
-    <span class="section-pill">CORE SERVICES</span>
-    <h2 class="section-title">Healthcare Support Services</h2>
+  <div class="text-center mb-5 reveal">
+    <span class="section-label">OUR SERVICES</span>
+    <h2 class="section-title">Support That Meets You Where You Are</h2>
+    <p class="section-subtitle">
+      From daily support to community care, we are here to help with respect and compassion.
+    </p>
   </div>
 
   <div class="row g-4">
-    <div class="col-md-6">
-      <div class="service-card">
-        <div class="service-top">
-          <h3>Homemaker Personal Care</h3>
-          <span>↗</span>
+
+    <!-- service card one -->
+    <div class="col-md-6 col-lg-3 reveal">
+      <div class="service-card h-100">
+        <img
+          src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=80"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80';"
+          alt="Caregiver helping an older adult"
+          class="service-img"
+        >
+        <div class="service-content">
+          <h3>Personal Care & Support</h3>
+          <p>Assistance with daily living activities that promote independence and dignity.</p>
+          <a href="services.html">Learn More →</a>
         </div>
-        <p>Support with daily living needs, personal care, routines, and safety.</p>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="service-card">
-        <div class="service-top">
-          <h3>Transportation</h3>
-          <span>↗</span>
+    <!-- service card two -->
+    <div class="col-md-6 col-lg-3 reveal delay-1">
+      <div class="service-card h-100">
+        <img
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80';"
+          alt="People spending time together"
+          class="service-img"
+        >
+        <div class="service-content">
+          <h3>Community Integration</h3>
+          <p>Helping individuals engage in their communities and build meaningful connections.</p>
+          <a href="services.html">Learn More →</a>
         </div>
-        <p>Reliable transportation support for appointments and community activities.</p>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="service-card">
-        <div class="service-top">
-          <h3>Supported Living</h3>
-          <span>↗</span>
+    <!-- service card three -->
+    <div class="col-md-6 col-lg-3 reveal delay-2">
+      <div class="service-card h-100">
+        <img
+          src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=900&q=80"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=900&q=80';"
+          alt="Comfortable home setting"
+          class="service-img"
+        >
+        <div class="service-content">
+          <h3>Respite Care Services</h3>
+          <p>Temporary relief and support for caregivers and family members.</p>
+          <a href="services.html">Learn More →</a>
         </div>
-        <p>Helping individuals build independence while still receiving needed support.</p>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="service-card">
-        <div class="service-top">
-          <h3>Community Support</h3>
-          <span>↗</span>
+    <!-- service card four -->
+    <div class="col-md-6 col-lg-3 reveal delay-3">
+      <div class="service-card h-100">
+        <img
+          src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=900&q=80';"
+          alt="Health and wellness support"
+          class="service-img"
+        >
+        <div class="service-content">
+          <h3>Health & Wellness Support</h3>
+          <p>Promoting physical, mental, and emotional well-being through personalized care.</p>
+          <a href="services.html">Learn More →</a>
         </div>
-        <p>Support that helps individuals stay connected with their community.</p>
       </div>
     </div>
+
   </div>
 </main>
 
-<section class="container why-section text-center">
-  <span class="section-pill">WHY CHOOSE US</span>
-  <h2>Why Choose Apex Health?</h2>
-  <p>
-    We focus on respect, safety, communication, and high-quality support for every individual.
-    Our goal is to make care easier to understand and easier to access.
-  </p>
 
-  <div class="row g-4 mt-4">
-    <div class="col-md-4">
-      <div class="mini-card">
-        <h4>Respectful Care</h4>
-        <p>We treat every person with dignity and respect.</p>
-      </div>
-    </div>
+<!-- why choose apex section -->
+<section class="blue-impact-section reveal">
+  <div class="container">
+    <div class="row g-4 align-items-center">
 
-    <div class="col-md-4">
-      <div class="mini-card">
-        <h4>Reliable Support</h4>
-        <p>We provide dependable services for individuals and families.</p>
+      <!-- left side text -->
+      <div class="col-lg-4">
+        <span class="light-label">WHY CHOOSE APEX</span>
+        <h2>Built on Trust.<br>Focused on Care.</h2>
+        <p>
+          We combine dependable support with real compassion to make a positive
+          difference in the lives we serve.
+        </p>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="mini-card">
-        <h4>Community Focused</h4>
-        <p>We help people stay connected with their community.</p>
+      <!-- right side stats -->
+      <div class="col-lg-8">
+        <div class="row g-4">
+
+          <div class="col-md-3">
+            <div class="stat-box">
+              <h3>250+</h3>
+              <p>Individuals Served</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="stat-box">
+              <h3>10+</h3>
+              <p>Years of Care</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="stat-box">
+              <h3>50+</h3>
+              <p>Care Professionals</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="stat-box">
+              <h3>98%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="container cta-box text-center">
-  <h2>Ready to learn more?</h2>
-  <p>Contact Apex Health Services today to ask questions or request support.</p>
-  <a href="contact.html" class="btn blue-btn">Contact Us</a>
+
+<!-- story section -->
+<section class="container section-space story-section">
+  <div class="row align-items-center g-5">
+
+    <!-- story text -->
+    <div class="col-lg-5 reveal">
+      <span class="section-label">OUR STORY</span>
+      <h2>People First. Always.</h2>
+
+      <p>
+        At Apex Health Services, we believe every person deserves to feel
+        supported, respected, and empowered. Our goal is to provide care that
+        helps people thrive at home, in the community, and every day.
+      </p>
+
+      <a href="about.html" class="btn blue-btn">Learn More About Us <span>→</span></a>
+    </div>
+
+    <!-- story picture -->
+    <div class="col-lg-7 reveal delay-1">
+      <img
+        src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1200&q=80"
+        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80';"
+        alt="Care team supporting a family"
+        class="story-img"
+      >
+    </div>
+
+  </div>
 </section>
 
+
+<!-- moving review section -->
+<section class="review-marquee-section section-space">
+  <div class="container text-center mb-5 reveal">
+    <span class="review-pill">TESTIMONIALS</span>
+    <h2 class="section-title text-white">What Families Are Saying</h2>
+    <p class="review-subtitle">
+      Real feedback from families and caregivers who value compassionate support.
+    </p>
+  </div>
+
+  <!-- first moving row -->
+  <div class="review-marquee">
+    <div class="review-track review-track-left">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Apex Health Services has been a blessing for our family. The team is kind and dependable.</p>
+        <h5>Maria S.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>The support gave me peace of mind knowing my dad is in good hands.</p>
+        <h5>James T.</h5>
+        <span>Family Caregiver</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Professional, compassionate, and always responsive. They truly care.</p>
+        <h5>Linda R.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>The team listens and communicates clearly. We always feel supported.</p>
+        <h5>David L.</h5>
+        <span>Client Family</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Apex Health Services has been a blessing for our family. The team is kind and dependable.</p>
+        <h5>Maria S.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>The support gave me peace of mind knowing my dad is in good hands.</p>
+        <h5>James T.</h5>
+        <span>Family Caregiver</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- second moving row -->
+  <div class="review-marquee second-row">
+    <div class="review-track review-track-right">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>They helped our family during a difficult time. Their care made a real difference.</p>
+        <h5>Michelle R.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Reliable, respectful, and professional. Apex made things easier for my mother.</p>
+        <h5>Sarah K.</h5>
+        <span>Daughter of Client</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>The caregivers are patient and caring. We always feel informed and included.</p>
+        <h5>Anthony M.</h5>
+        <span>Family Caregiver</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Great communication and dependable support. I would recommend Apex to families.</p>
+        <h5>Emily B.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>They helped our family during a difficult time. Their care made a real difference.</p>
+        <h5>Michelle R.</h5>
+        <span>Family Member</span>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Reliable, respectful, and professional. Apex made things easier for my mother.</p>
+        <h5>Sarah K.</h5>
+        <span>Daughter of Client</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- how it works section -->
+<section class="process-section section-space">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">HOW IT WORKS</span>
+      <h2 class="section-title">Getting Started Is Simple</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-3 reveal">
+        <div class="process-card">
+          <div class="step-number">1</div>
+          <h4>Reach Out</h4>
+          <p>Call or message us to start the conversation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 reveal delay-1">
+        <div class="process-card">
+          <div class="step-number">2</div>
+          <h4>We Listen</h4>
+          <p>We learn about your needs, goals, and preferences.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 reveal delay-2">
+        <div class="process-card">
+          <div class="step-number">3</div>
+          <h4>Create a Plan</h4>
+          <p>We design a personalized support plan.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 reveal delay-3">
+        <div class="process-card">
+          <div class="step-number">4</div>
+          <h4>Ongoing Support</h4>
+          <p>We stay connected and adjust as needs change.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- faq section -->
+<section id="faq" class="faq-section section-space">
+  <div class="container">
+
+    <div class="text-center mb-5 reveal">
+      <span class="faq-pill">FAQ</span>
+      <h2 class="section-title">Quick & Clear Answers</h2>
+      <p class="section-subtitle">
+        Common questions about Apex Health Services and how our support process works.
+      </p>
+    </div>
+
+    <div class="faq-wrapper reveal">
+
+      <details open>
+        <summary>What services does Apex Health Services provide?</summary>
+        <p>
+          Apex Health Services provides community-based support including personal care,
+          community integration, respite care, and health and wellness support.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I get started with services?</summary>
+        <p>
+          You can contact us by phone, email, or the contact form. Our team will listen
+          to your needs and explain the next steps.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you support individuals and families in Columbus, Ohio?</summary>
+        <p>
+          Yes. Apex Health Services is based in Columbus, Ohio and supports individuals
+          and families in the local community.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can services be personalized?</summary>
+        <p>
+          Yes. Support is based on each person’s needs, goals, routine, and level of independence.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can families contact Apex Health Services?</summary>
+        <p>
+          Families can call us at (480) 842-9492 or email apexhealthservicesoh@gmail.com.
+        </p>
+      </details>
+
+      <details>
+        <summary>What makes Apex different?</summary>
+        <p>
+          Apex focuses on compassionate care, clear communication, community connection,
+          and support that respects each person’s dignity and independence.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- final call to action -->
+<section class="final-cta reveal">
+  <div class="container">
+    <div class="final-cta-box">
+
+      <div>
+        <h2>Let’s Build a Better Tomorrow—Together.</h2>
+        <p>Partner with Apex Health Services for trusted, compassionate care.</p>
+      </div>
+
+      <a href="contact.html" class="btn white-cta-btn">Get Started Today <span>→</span></a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
 <footer>
-  <p>&copy; 2026 Apex Health Services. All rights reserved.</p>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- footer brand -->
+      <div class="col-lg-3">
+        <div class="footer-brand d-flex align-items-center gap-2">
+          <img src="images/logo.svg" alt="Apex Health Services Logo">
+          <h4>Apex Health Services</h4>
+        </div>
+
+        <p>
+          Providing compassionate, professional, and community-based health
+          support services across Ohio.
+        </p>
+
+        <div class="socials">
+          <span>f</span>
+          <span>in</span>
+          <span>ig</span>
+          <span>▶</span>
+        </div>
+      </div>
+
+      <!-- footer links -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- footer services -->
+      <div class="col-lg-3 col-md-6">
+        <h5>Our Services</h5>
+        <a href="services.html">Personal Care & Support</a>
+        <a href="services.html">Community Integration</a>
+        <a href="services.html">Respite Care Services</a>
+        <a href="services.html">Health & Wellness Support</a>
+        <a href="services.html">View All Services</a>
+      </div>
+
+      <!-- footer contact -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Contact Us</h5>
+        <p>(480) 842-9492</p>
+        <p>apexhealthservicesoh@gmail.com</p>
+        <p>Columbus, Ohio</p>
+        <p>Mon – Fri: 8:00 AM – 5:00 PM</p>
+      </div>
+
+      <!-- newsletter -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Newsletter</h5>
+        <p>Stay updated on news and resources that matter.</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- bottom footer -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Apex Health Services. All rights reserved.</p>
+
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
+
+<!-- this makes sections pop up when scrolling -->
+<script>
+  const revealElements = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    for (let i = 0; i < revealElements.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = revealElements[i].getBoundingClientRect().top;
+      const revealPoint = 120;
+
+      if (elementTop < windowHeight - revealPoint) {
+        revealElements[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+
+<!-- bootstrap for mobile navbar -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

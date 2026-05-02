@@ -1,84 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apex Health Services - About</title>
 
+  <!-- page title -->
+  <title>Apex Health Services - About Us</title>
+
+  <!-- bootstrap for layout -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- my css file -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top custom-navbar">
   <div class="container">
+
+    <!-- logo and business name -->
     <a class="navbar-brand d-flex align-items-center gap-2 fw-bold brand-text" href="index.html">
       <img src="images/logo.svg" alt="Apex Health Services Logo" class="nav-logo">
       <span class="d-none d-md-inline">Apex Health Services</span>
       <span class="d-inline d-md-none">Apex Health</span>
     </a>
 
+    <!-- mobile menu button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- navbar links -->
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
       </ul>
 
-      <a href="contact.html" class="btn blue-btn">Get Started</a>
+      <!-- phone number and button -->
+      <div class="nav-right d-flex align-items-center gap-3">
+        <a href="tel:4808429492" class="nav-phone d-none d-lg-inline">(480) 842-9492</a>
+        <a href="contact.html" class="btn blue-btn">Get Started</a>
+      </div>
     </div>
   </div>
 </nav>
 
-<header class="container page-hero text-center">
-  <span class="section-pill">ABOUT APEX</span>
-  <h1>Care built around respect and support</h1>
-  <p>
-    Apex Health Services is focused on helping individuals and families receive
-    reliable support in a caring and professional way.
-  </p>
+
+<!-- about hero -->
+<header class="inner-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- left side text -->
+      <div class="col-lg-6 reveal">
+        <span class="section-label">ABOUT APEX</span>
+        <h1>Care Built on Respect and Trust.</h1>
+        <p>
+          Apex Health Services is committed to supporting individuals and families
+          with dependable, compassionate, and community-based care.
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="services.html" class="btn blue-btn">View Services <span>→</span></a>
+          <a href="contact.html" class="btn outline-btn">Contact Us <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- right side picture -->
+      <div class="col-lg-6 reveal delay-1">
+        <img
+          src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80';"
+          alt="Healthcare support team"
+          class="inner-hero-img"
+        >
+      </div>
+
+    </div>
+  </div>
 </header>
 
-<main class="container section-space">
-  <div class="row g-4 align-items-center">
-    <div class="col-lg-6">
-      <div class="info-card">
-        <h2>Who We Are</h2>
+
+<!-- who we are section -->
+<section class="container section-space">
+  <div class="row align-items-center g-5">
+
+    <!-- image side -->
+    <div class="col-lg-6 reveal">
+      <img
+        src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1200&q=80"
+        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80';"
+        alt="Support team meeting"
+        class="about-img"
+      >
+    </div>
+
+    <!-- text side -->
+    <div class="col-lg-6 reveal delay-1">
+      <span class="section-label">WHO WE ARE</span>
+      <h2 class="about-heading">A Team Focused on People First.</h2>
+      <p>
+        Apex Health Services provides support for individuals and families who
+        need reliable help in daily life and community settings. Our goal is to
+        make care feel personal, respectful, and easy to understand.
+      </p>
+
+      <p>
+        We believe good care starts with listening. That means learning about
+        each person’s needs, goals, routines, and comfort before creating the
+        right support plan.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- mission values section -->
+<section class="about-blue-section reveal">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <!-- mission text -->
+      <div class="col-lg-5">
+        <span class="light-label">OUR MISSION</span>
+        <h2>Helping People Feel Supported Every Day.</h2>
         <p>
-          Apex Health Services provides support services for individuals and
-          families in Ohio. Our goal is to create a safe, respectful, and
-          helpful experience for every person we serve.
+          Our mission is to provide dependable care that supports independence,
+          dignity, safety, and community connection.
         </p>
+      </div>
+
+      <!-- values cards -->
+      <div class="col-lg-7">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <div class="value-card">
+              <h4>Respect</h4>
+              <p>We treat every person with dignity, patience, and understanding.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="value-card">
+              <h4>Communication</h4>
+              <p>We keep families informed and make support easier to understand.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="value-card">
+              <h4>Reliability</h4>
+              <p>We provide dependable care families can feel confident about.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="value-card">
+              <h4>Community</h4>
+              <p>We help individuals stay connected to the people and places around them.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- why families choose us -->
+<section class="container section-space">
+  <div class="text-center mb-5 reveal">
+    <span class="section-label">WHY FAMILIES CHOOSE US</span>
+    <h2 class="section-title">Support That Feels Personal</h2>
+    <p class="section-subtitle">
+      We focus on trust, comfort, clear communication, and care that fits real life.
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- reason 1 -->
+    <div class="col-md-4 reveal">
+      <div class="reason-card h-100">
+        <div class="feature-line"></div>
+        <h4>Care with Dignity</h4>
         <p>
-          This website was created to make it easy for visitors to learn about
-          our services, understand our mission, and contact us.
+          Every person deserves care that respects their choices, comfort, and independence.
         </p>
       </div>
     </div>
 
-    <div class="col-lg-6">
-      <div class="info-card blue-soft">
-        <h2>Our Values</h2>
-        <ul>
-          <li>Respectful care</li>
-          <li>Clear communication</li>
-          <li>Professional support</li>
-          <li>Community connection</li>
-        </ul>
+    <!-- reason 2 -->
+    <div class="col-md-4 reveal delay-1">
+      <div class="reason-card h-100">
+        <div class="feature-line"></div>
+        <h4>Support Families Can Trust</h4>
+        <p>
+          We work to make families feel informed, supported, and confident in the care process.
+        </p>
+      </div>
+    </div>
+
+    <!-- reason 3 -->
+    <div class="col-md-4 reveal delay-2">
+      <div class="reason-card h-100">
+        <div class="feature-line"></div>
+        <h4>Focused on Independence</h4>
+        <p>
+          Our support helps individuals build confidence while staying connected to their community.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- final call to action -->
+<section class="final-cta reveal">
+  <div class="container">
+    <div class="final-cta-box">
+
+      <div>
+        <h2>Learn How Apex Can Support You.</h2>
+        <p>Reach out today and let’s talk about the next step.</p>
+      </div>
+
+      <a href="contact.html" class="btn white-cta-btn">Contact Us Today <span>→</span></a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- footer brand -->
+      <div class="col-lg-3">
+        <div class="footer-brand d-flex align-items-center gap-2">
+          <img src="images/logo.svg" alt="Apex Health Services Logo">
+          <h4>Apex Health Services</h4>
+        </div>
+
+        <p>
+          Providing compassionate, professional, and community-based health
+          support services across Ohio.
+        </p>
+
+        <div class="socials">
+          <span>f</span>
+          <span>in</span>
+          <span>ig</span>
+          <span>▶</span>
+        </div>
+      </div>
+
+      <!-- footer links -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- footer services -->
+      <div class="col-lg-3 col-md-6">
+        <h5>Our Services</h5>
+        <a href="services.html">Personal Care & Support</a>
+        <a href="services.html">Community Integration</a>
+        <a href="services.html">Respite Care Services</a>
+        <a href="services.html">Health & Wellness Support</a>
+        <a href="services.html">View All Services</a>
+      </div>
+
+      <!-- footer contact -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Contact Us</h5>
+        <p>(480) 842-9492</p>
+        <p>apexhealthservicesoh@gmail.com</p>
+        <p>Columbus, Ohio</p>
+        <p>Mon – Fri: 8:00 AM – 5:00 PM</p>
+      </div>
+
+      <!-- newsletter -->
+      <div class="col-lg-2 col-md-6">
+        <h5>Newsletter</h5>
+        <p>Stay updated on news and resources that matter.</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- bottom footer -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Apex Health Services. All rights reserved.</p>
+
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Accessibility</a>
       </div>
     </div>
   </div>
-</main>
-
-<footer>
-  <p>&copy; 2026 Apex Health Services. All rights reserved.</p>
 </footer>
 
+
+<!-- this makes sections show up when scrolling -->
+<script>
+  const revealElements = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    for (let i = 0; i < revealElements.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = revealElements[i].getBoundingClientRect().top;
+      const revealPoint = 120;
+
+      if (elementTop < windowHeight - revealPoint) {
+        revealElements[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+
+<!-- bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
